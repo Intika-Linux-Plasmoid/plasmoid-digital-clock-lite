@@ -77,7 +77,7 @@ Item {
         id: fontSizesModel
         Component.onCompleted: {
             var arr = [] // use temp array to avoid constant binding stuff
-            arr.push({text: i18n("Use default font size", "Default"), value: ""})
+            arr.push({text: i18nc("Use default font size", "Default"), value: ""})
 
             var sizes = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '26', '28', '36', '48', '72']
             for (var i = 0, j = sizes.length; i < j; ++i) {
